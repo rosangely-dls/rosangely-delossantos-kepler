@@ -1,0 +1,68 @@
+body {
+    background-color:rgb(227, 244, 233);
+    color: rgb(66, 3, 36);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    padding: 30px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 45px;
+    font-weight:lighter; 
+    color:rgb(237, 27, 164)
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: lighter;
+    color: rgb(237, 27, 164)
+}
+
+h3 {
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: lighter;
+    color: rgb(237, 27, 164)
+    border
+}
+
+#Connect {
+    text-align: center;
+}
+#About, #Experience, #Connect {
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    padding: 10px; 
+}
+
+ul {
+   background-color: rgb(242, 246, 241);
+    list-style-type:circle;
+    border: 2px solid #77d2d7; 
+    padding: 15px;
+    border-radius: 8px;
+}
+
+a {
+    color:rgb(242, 101, 171);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: inline-block;
+    background-color: rgb(242, 246, 241);
+    color: rgb(242, 101, 171);
+    padding: 10px 20px;
+    border: 2px solid #77d2d7;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    color: rgb(200, 50, 120);
+}
