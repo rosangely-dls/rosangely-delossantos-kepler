@@ -5,7 +5,7 @@ body {
 }
 
 
-    nav {
+nav {
         background-color: rgb(227, 244, 233);
         padding: 0;
     }
@@ -61,6 +61,7 @@ h3 {
 #Connect {
     text-align: center;
 }
+
 #About, #Experience, #Connect {
     margin-top: 20px; 
     margin-bottom: 20px; 
@@ -108,6 +109,23 @@ a:hover {
     border-radius: 5px; /* Rounded corners for each item */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect for each item */
     flex: 1 1 200px; /* Flex properties: grow, shrink, basis */
+}
+
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .skill-item {
+        background-color: #f4f4f4;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        flex: 1 1 100px;
+        text-align: center;
+    }
+
 
     .connect-container {
         display: flex; /* Enables Flexbox on the container */
