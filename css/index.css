@@ -1,4 +1,6 @@
 
+/*My code is desktop first*/
+
 html {
     font-size: 16px; /* Default base size */
 }
@@ -41,6 +43,7 @@ body {
     }
   }
 
+/*Styles for desktop*/
 nav {
         background-color: var(--primary-bg-color);
         padding: 0;
@@ -64,6 +67,37 @@ nav {
         font-size: 1rem;
         border: none;
     }
+
+/* Styles for tablets */
+@media (max-width: 1024px) {
+    nav ul {
+        justify-content: space-around; /* Adjusts spacing for tablet */
+    }
+
+    nav ul li a {
+        font-size: 0.875rem; /* Smaller font size for tablet */
+    }
+}
+
+/* Styles for mobile */
+@media (max-width: 768px) {
+    nav {
+        padding: var(--padding-size); /* Adds padding for mobile */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stacks items vertically on mobile */
+        align-items: center; /* Centers items */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adds vertical spacing between items */
+    }
+
+    nav ul li a {
+        font-size: 0.75rem; /* Even smaller font size for mobile */
+    }
+}
 
 
 /* Base styles for desktop */
