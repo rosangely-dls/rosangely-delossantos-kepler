@@ -11,7 +11,7 @@ const today = new Date();
 const thisYear = today.getFullYear();
 
 const copyrightParagraph = document.createElement('p');
-copyrightParagraph.textContent = `© ${thisYear} Rosangely De Los Santos. All rights reserved.`;
+copyrightParagraph.textContent = `\u00A9 ${thisYear} Rosangely De Los Santos. All rights reserved.`;
 
 footer.appendChild(copyrightParagraph);
 });
