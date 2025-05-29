@@ -249,21 +249,23 @@ a:hover {
   color: #333;
 }
 
-.skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.625rem;
-  text-align: center;
+
+#Skills {
+  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-.skill-item {
-  background-color: #f4f4f4;
-  padding: var(--padding-size);
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
-  flex: 1 1 100px;
-  text-align: center;
+#Skills h2 {
+    text-align: center;
+    color:deeppink;
+    
 }
+
+#Skills ul {
+    list-style-type:circle;
+}
+
+
 
 .connect-container {
   display: flex; /* Enables Flexbox on the container */
@@ -303,9 +305,9 @@ a:hover {
 .my-footer {
   background-color: #333;
   color: #fff;
-  padding: 20px;
+  padding: 2px;
   text-align: center;
-  position: fixed;
+  position:relative
   bottom: 0;
   width: 100%;
 }
