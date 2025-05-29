@@ -262,9 +262,50 @@ a:hover {
 }
 
 #Skills ul {
-    list-style-type:circle;
+    list-style-type:none;
 }
 
+
+
+
+
+.skills-container {
+    display: flex; /* Enables Flexbox on the container */
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    justify-content: center; /* Centers items horizontally */
+    gap: var(--gap-size); /* Adds space between items */
+    padding: 2em; /* Adds padding around the container */
+  }
+  
+  .skills-container ul {
+    display: flex; /* Enables Flexbox on the list */
+   /* flex-direction:row; */
+  /*  align-items: center;  Centers items horizontally */
+
+  }
+  
+  .skills-container li {
+    background-color: #f4f4f4; /* Background color for each item */
+    padding: var(--padding-size); /* Padding inside each item */
+    /*border-radius: var(--border-radius); /* Rounded corners for each item */
+   /* box-shadow: var(--box-shadow); /* Shadow effect for each item */
+  /*  margin-bottom: var(--gap-size); /* Adds space between items */
+  }
+
+
+
+
+
+@media (max-width: 768px) {
+    .skills-container ul {
+      flex-direction: row; /* Stacks items horizontally on smaller screens */
+      flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    }
+  
+    .skills-container li {
+      flex: 1 1 100%; /* Full width on smaller screens */
+    }
+  }
 
 
 .connect-container {
@@ -307,7 +348,7 @@ a:hover {
   color: #fff;
   padding: 2px;
   text-align: center;
-  position:relative
+  position:relative;
   bottom: 0;
   width: 100%;
 }
