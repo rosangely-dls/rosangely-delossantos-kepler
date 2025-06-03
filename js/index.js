@@ -63,7 +63,7 @@ messageForm.addEventListener("submit", function (event) {
 
   removeButton.addEventListener("click", function () {
     const entry = removeButton.parentNode;
-    entry.removeChild();
+    entry.parentNode.removeChild(entry);
   });
 
   newMessage.appendChild(removeButton);
