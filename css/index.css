@@ -1,298 +1,354 @@
-
 /*My code is desktop first*/
 
 html {
-    font-size: 16px; /* Default base size */
+  font-size: 16px; /* Default base size */
 }
 
 :root {
-    --primary-bg-color: rgb(227, 244, 233);
-    --text-color: rgb(66, 3, 36);
-    --highlight-color: rgb(242, 101, 171);
-    --heading-color: rgb(237, 27, 164);
-    --border-color: #77d2d7;
-    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    --gap-size: 1.25rem;
-    --padding-size: 0.625rem;
-    --border-radius: 0.3125rem;
+  --primary-bg-color: rgb(227, 244, 233);
+  --text-color: rgb(66, 3, 36);
+  --highlight-color: rgb(242, 101, 171);
+  --heading-color: rgb(237, 27, 164);
+  --border-color: #77d2d7;
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --gap-size: 1.25rem;
+  --padding-size: 0.625rem;
+  --border-radius: 0.3125rem;
 }
-
 
 /*Base styles for desktop */
 body {
-    background-color: var(--primary-bg-color);
-    color: var(--text-color);
-    font-size: 1rem;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+  font-size: 1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 /* Styles for tablets */
 @media (max-width: 1024px) {
-    body {
-      font-size: 0.875rem;
-      padding: 0.9375rem;
-    }
+  body {
+    font-size: 0.875rem;
+    padding: 0.9375rem; 
   }
+}
 
 /* Styles for mobile */
 @media (max-width: 768px) {
-    body {
-      font-size: 0.75rem;
-      padding: var(--padding-size);
-    }
+  body {
+   font-family: Arial, Helvetica, sans-serif;
+    padding: var(--padding-size); 
   }
+}
 
 /*Styles for desktop*/
 nav {
-        background-color: var(--primary-bg-color);
-        padding: 0;
-    }
+  background-color: var(--primary-bg-color);
+  padding: 0;
+}
 
-    nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-    }
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
 
-    nav ul li {
-        margin: 0 15px;
-    }
+nav ul li {
+  margin: 0 15px;
+}
 
-    nav ul li a {
-        color: var(--highlight-color);
-        text-decoration: none;
-        font-size: 1rem;
-        border: none;
-    }
+nav ul li a {
+  color: var(--highlight-color);
+  text-decoration: none;
+  font-size: 2em;
+  border: none;
+}
 
 /* Styles for tablets */
 @media (max-width: 1024px) {
-    nav ul {
-        justify-content: space-around; /* Adjusts spacing for tablet */
-    }
+  nav ul {
+    justify-content: space-around; /* Adjusts spacing for tablet */
+  }
 
-    nav ul li a {
-        font-size: 0.875rem; /* Smaller font size for tablet */
-    }
+  nav ul li a {
+   /* font-size: 0.875rem;  Smaller font size for tablet */
+  color: magenta;
+  font-style: italic;
+}
 }
 
 /* Styles for mobile */
 @media (max-width: 768px) {
-    nav {
-        padding: var(--padding-size); /* Adds padding for mobile */
-    }
+  nav {
+    padding: var(--padding-size); /* Adds padding for mobile */
+  }
 
-    nav ul {
-        flex-direction: column; /* Stacks items vertically on mobile */
-        align-items: center; /* Centers items */
-    }
+  nav ul {
+    flex-direction: column; /* Stacks items vertically on mobile */
+    align-items: center; /* Centers items */
+  }
 
-    nav ul li {
-        margin: 10px 0; /* Adds vertical spacing between items */
-    }
+  nav ul li {
+    margin: 10px 0; /* Adds vertical spacing between items */
+  }
 
-    nav ul li a {
-        font-size: 0.75rem; /* Even smaller font size for mobile */
-    }
+  nav ul li a {
+    /*font-size: 0.75rem;  Even smaller font size for mobile */
+  color: darkred;
+  font-style:oblique;
+
 }
-
+}
 
 /* Base styles for desktop */
 h1 {
-    text-align: center;
-    margin-top: 3.125rem;
-    margin-bottom: 1.5625rem;
-    padding: 1.875rem;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 2.8125rem;
-    font-weight:lighter; 
-    color: var(--heading-color);
+  text-align: center;
+  margin-top: 3.125rem;
+  margin-bottom: 1.5625rem;
+  padding: 1.875rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2.8125rem;
+  font-weight: lighter;
+  color: var(--heading-color);
 }
-
-@media (max-width: 1024px) {
-    h1, h2, h3 {
-      font-size: 1.25rem;
-    }
-  }
-
-  /* Styles for mobile */
-  @media (max-width: 768px) {
-    h1, h2, h3 {
-      font-size: 1.125rem;
-      padding:  var(--padding-size);
-    }
-  }
-
 
 /* Base styles for desktop */
 h2 {
     margin-bottom: 10px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     font-size: 1.5625rem;
     font-weight: lighter;
     color: var(--heading-color);
-}
-
-
-
-/* Base styles for desktop */
-h3 {
+  }
+  
+  /* Base styles for desktop */
+  h3 {
     margin-bottom: 10px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     font-size: 1.5625rem;
     font-weight: lighter;
     color: var(--heading-color);
-    
+  }
+
+@media (max-width: 1024px) {
+  
+  h3 {
+    font-size: 1.25rem;
+    color:rgb(66, 3, 36);
+  }
 }
+
+/* Styles for mobile */
+@media (max-width: 768px) {
+ 
+  h3 {
+    font-size: 1.125rem;
+    padding: var(--padding-size);
+    color: darkmagenta;
+  }
+}
+
 
 
 #Connect {
-    text-align: center;
+  text-align: center;
 }
 
-#About, #Experience, #Connect {
-    margin-top: 20px; 
-    margin-bottom: 20px; 
-    padding: var(--padding-size); 
+#About,
+#Experience,
+#Connect {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: var(--padding-size);
 }
-
-
 
 ul {
-   background-color: rgb(242, 246, 241);
-    list-style-type:circle;
-    border: 2px solid var(--border-color); 
-    padding: 15px;
-    border-radius: var(--border-radius);
+  background-color: rgb(242, 246, 241);
+  list-style-type: circle;
+  border: 2px solid var(--border-color);
+  padding: 15px;
+  border-radius: var(--border-radius);
 }
 
 a {
-    color: var(--highlight-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
-    display: inline-block;
-    background-color: rgb(242, 246, 241);
-    padding: 0.625rem 1.25rem;
-    border: 2px solid var(--border-color);
-    border-radius: var(--border-radius);
-    transition: background-color 0.3s ease;
+  color: var(--highlight-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: inline-block;
+  background-color: rgb(242, 246, 241);
+  padding: 0.625rem 1.25rem;
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius);
+  transition: background-color 0.3s ease;
 }
 
 a:hover {
-    color: rgb(200, 50, 120);
+  color: rgb(200, 50, 120);
 }
 
 .flex-container {
-    display: flex; /* Enables Flexbox on the container */
-    flex-wrap: wrap; /* Allows items to wrap onto the next line */
-    gap: var(--gap-size); /* Adds space between items */
-    padding: 1.25rem; /* Adds padding around the container */
+  display: flex; /* Enables Flexbox on the container */
+  flex-wrap: wrap; /* Allows items to wrap onto the next line */
+  gap: var(--gap-size); /* Adds space between items */
+  padding: 1.25rem; /* Adds padding around the container */
 }
 
 .flex-item {
-    background-color: #f4f4f4; /* Background color for each item */
-    padding: 0.9375rem; /* Padding inside each item */
-    border-radius: var(--border-radius); /* Rounded corners for each item */
-    box-shadow: var(--box-shadow); /* Shadow effect for each item */
-    flex: 1 1 200px; /* Flex properties: grow, shrink, basis */
+  background-color: #f4f4f4; /* Background color for each item */
+  padding: 0.9375rem; /* Padding inside each item */
+  border-radius: var(--border-radius); /* Rounded corners for each item */
+  box-shadow: var(--box-shadow); /* Shadow effect for each item */
+  flex: 1 1 200px; /* Flex properties: grow, shrink, basis */
 }
 
 /* Adjust for smaller screens */
 @media (max-width: 768px) {
-    .flex-item {
-        flex: 1 1 100%; /* Full width on smaller screens */
-    }
+  .flex-item {
+    flex: 1 1 100%; /* Full width on smaller screens */
+  }
 }
-  
+
 .experience-container {
-    display: grid; /* Enables Grid layout on the container */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Creates responsive columns */
-    gap: var(--gap-size); /* Adds space between items */
-    padding: 1.25rem; /* Adds padding around the container */
+  display: grid; /* Enables Grid layout on the container */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Creates responsive columns */
+  gap: var(--gap-size); /* Adds space between items */
+  padding: 1.25rem; /* Adds padding around the container */
 }
 
 .experience-item {
-    background-color: #f4f4f4;
-    padding: 0.9375rem;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
+  background-color: #f4f4f4;
+  padding: 0.9375rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
 }
 
 .experience-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.625rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.625rem;
 }
 
 .job-title {
-    font-weight: bold;
-    font-size: 1.125rem;
+  font-weight: bold;
+  font-size: 2em; 
 }
 
 .job-date {
-    font-size: 0.875rem;
-    color: #666;
+  font-size: 2em;
+  color: #666;
 }
 
 .job-description {
-    font-size: 1rem;
-    color: #333;
+  font-size: 1rem;
+  color: #333;
 }
+
+
+#Skills {
+  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#Skills h2 {
+    text-align: center;
+    color:deeppink;
+    
+}
+
+#Skills ul {
+    list-style-type:none;
+}
+
 
 
 
 
 .skills-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.625rem;
-    }
-    
-    .skill-item {
-        background-color: #f4f4f4;
-        padding: var(--padding-size);
-        border-radius: var(--border-radius);
-        box-shadow: var(--box-shadow);
-        flex: 1 1 100px;
-        text-align: center;
-    }
+    display: flex; /* Enables Flexbox on the container */
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    justify-content: center; /* Centers items horizontally */
+    gap: var(--gap-size); /* Adds space between items */
+    padding: 2em; /* Adds padding around the container */
+  }
+  
+  .skills-container ul {
+    display: flex; /* Enables Flexbox on the list */
+   /* flex-direction:row; */
+  /*  align-items: center;  Centers items horizontally */
+
+  }
+  
+  .skills-container li {
+    background-color: #f4f4f4; /* Background color for each item */
+    padding: var(--padding-size); /* Padding inside each item */
+    /*border-radius: var(--border-radius); /* Rounded corners for each item */
+   /* box-shadow: var(--box-shadow); /* Shadow effect for each item */
+  /*  margin-bottom: var(--gap-size); /* Adds space between items */
+  }
 
 
-    .connect-container {
-        display: flex; /* Enables Flexbox on the container */
-        flex-wrap: wrap; /* Allows items to wrap onto the next line */
-        justify-content: center; /* Centers items horizontally */
-        gap: var(--gap-size); /* Adds space between items */
-        padding: 1.25rem; /* Adds padding around the container */
+
+
+
+@media (max-width: 768px) {
+    .skills-container ul {
+      flex-direction: row; /* Stacks items horizontally on smaller screens */
+      flex-wrap: wrap; /* Allows items to wrap onto the next line */
     }
-    
-    .connect-item {
-        display: flex; /* Enables Flexbox on the item for icon and text alignment */
-        align-items: center; /* Vertically centers the icon and text */
-        background-color: #f4f4f4; /* Background color for each item */
-        padding: var(--padding-size); /* Padding inside each item */
-        border-radius: var(--border-radius); /* Rounded corners for each item */
-        box-shadow: var(--box-shadow); /* Shadow effect for each item */
-        transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  
+    .skills-container li {
+      flex: 1 1 100%; /* Full width on smaller screens */
     }
-    
-    .connect-item a {
-        text-decoration: none; /* Removes underline from links */
-        color: #333; /* Text color */
-        display: flex; /* Enables Flexbox on the link for icon and text alignment */
-        align-items: center; /* Vertically centers the icon and text */
-    }
-    
-    .connect-item img {
-        width: 1.5rem; /* Icon width */
-        height: 1.5rem; /* Icon height */
-        margin-right: 0.625rem; /* Space between icon and text */
-    }
-    
-    .connect-item:hover {
-        background-color: #e0e0e0; /* Background color on hover */
-    }
+  }
+
+
+.connect-container {
+  display: flex; /* Enables Flexbox on the container */
+  flex-wrap: wrap; /* Allows items to wrap onto the next line */
+  justify-content: center; /* Centers items horizontally */
+  gap: var(--gap-size); /* Adds space between items */
+  padding: 1.25rem; /* Adds padding around the container */
+}
+
+.connect-item {
+  display: flex; /* Enables Flexbox on the item for icon and text alignment */
+  align-items: center; /* Vertically centers the icon and text */
+  background-color: #f4f4f4; /* Background color for each item */
+  padding: var(--padding-size); /* Padding inside each item */
+  border-radius: var(--border-radius); /* Rounded corners for each item */
+  box-shadow: var(--box-shadow); /* Shadow effect for each item */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.connect-item a {
+  text-decoration: none; /* Removes underline from links */
+  color: #333; /* Text color */
+  display: flex; /* Enables Flexbox on the link for icon and text alignment */
+  align-items: center; /* Vertically centers the icon and text */
+}
+
+.connect-item img {
+  width: 1.5rem; /* Icon width */
+  height: 1.5rem; /* Icon height */
+  margin-right: 0.625rem; /* Space between icon and text */
+}
+
+.connect-item:hover {
+  background-color: #e0e0e0; /* Background color on hover */
+}
+
+.my-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2px;
+  text-align: center;
+  position:relative;
+  bottom: 0;
+  width: 100%;
+}
