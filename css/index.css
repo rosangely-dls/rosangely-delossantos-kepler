@@ -29,15 +29,15 @@ body {
 @media (max-width: 1024px) {
   body {
     font-size: 0.875rem;
-    padding: 0.9375rem; 
+    padding: 0.9375rem;
   }
 }
 
 /* Styles for mobile */
 @media (max-width: 768px) {
   body {
-   font-family: Arial, Helvetica, sans-serif;
-    padding: var(--padding-size); 
+    font-family: Arial, Helvetica, sans-serif;
+    padding: var(--padding-size);
   }
 }
 
@@ -73,10 +73,10 @@ nav ul li a {
   }
 
   nav ul li a {
-   /* font-size: 0.875rem;  Smaller font size for tablet */
-  color: magenta;
-  font-style: italic;
-}
+    /* font-size: 0.875rem;  Smaller font size for tablet */
+    color: magenta;
+    font-style: italic;
+  }
 }
 
 /* Styles for mobile */
@@ -96,10 +96,9 @@ nav ul li a {
 
   nav ul li a {
     /*font-size: 0.75rem;  Even smaller font size for mobile */
-  color: darkred;
-  font-style:oblique;
-
-}
+    color: darkred;
+    font-style: oblique;
+  }
 }
 
 /* Base styles for desktop */
@@ -116,41 +115,37 @@ h1 {
 
 /* Base styles for desktop */
 h2 {
-    margin-bottom: 10px;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 1.5625rem;
-    font-weight: lighter;
-    color: var(--heading-color);
-  }
-  
-  /* Base styles for desktop */
-  h3 {
-    margin-bottom: 10px;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 1.5625rem;
-    font-weight: lighter;
-    color: var(--heading-color);
-  }
+  margin-bottom: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5625rem;
+  font-weight: lighter;
+  color: var(--heading-color);
+}
+
+/* Base styles for desktop */
+h3 {
+  margin-bottom: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5625rem;
+  font-weight: lighter;
+  color: var(--heading-color);
+}
 
 @media (max-width: 1024px) {
-  
   h3 {
     font-size: 1.25rem;
-    color:rgb(66, 3, 36);
+    color: rgb(66, 3, 36);
   }
 }
 
 /* Styles for mobile */
 @media (max-width: 768px) {
- 
   h3 {
     font-size: 1.125rem;
     padding: var(--padding-size);
     color: darkmagenta;
   }
 }
-
-
 
 #Connect {
   text-align: center;
@@ -236,7 +231,7 @@ a:hover {
 
 .job-title {
   font-weight: bold;
-  font-size: 2em; 
+  font-size: 2em;
 }
 
 .job-date {
@@ -249,64 +244,51 @@ a:hover {
   color: #333;
 }
 
-
 #Skills {
-  
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #Skills h2 {
-    text-align: center;
-    color:deeppink;
-    
+  text-align: center;
+  color: deeppink;
 }
 
 #Skills ul {
-    list-style-type:none;
+  list-style-type: none;
 }
 
-
-
-
-
 .skills-container {
-    display: flex; /* Enables Flexbox on the container */
-    flex-wrap: wrap; /* Allows items to wrap onto the next line */
-    justify-content: center; /* Centers items horizontally */
-    gap: var(--gap-size); /* Adds space between items */
-    padding: 2em; /* Adds padding around the container */
-  }
-  
-  .skills-container ul {
-    display: flex; /* Enables Flexbox on the list */
-   /* flex-direction:row; */
+  display: flex; /* Enables Flexbox on the container */
+  flex-wrap: wrap; /* Allows items to wrap onto the next line */
+  justify-content: center; /* Centers items horizontally */
+  gap: var(--gap-size); /* Adds space between items */
+  padding: 2em; /* Adds padding around the container */
+}
+
+.skills-container ul {
+  display: flex; /* Enables Flexbox on the list */
+  /* flex-direction:row; */
   /*  align-items: center;  Centers items horizontally */
+}
 
-  }
-  
-  .skills-container li {
-    background-color: #f4f4f4; /* Background color for each item */
-    padding: var(--padding-size); /* Padding inside each item */
-    /*border-radius: var(--border-radius); /* Rounded corners for each item */
-   /* box-shadow: var(--box-shadow); /* Shadow effect for each item */
+.skills-container li {
+  background-color: #f4f4f4; /* Background color for each item */
+  padding: var(--padding-size); /* Padding inside each item */
+  /*border-radius: var(--border-radius); /* Rounded corners for each item */
+  /* box-shadow: var(--box-shadow); /* Shadow effect for each item */
   /*  margin-bottom: var(--gap-size); /* Adds space between items */
-  }
-
-
-
-
+}
 
 @media (max-width: 768px) {
-    .skills-container ul {
-      flex-direction: row; /* Stacks items horizontally on smaller screens */
-      flex-wrap: wrap; /* Allows items to wrap onto the next line */
-    }
-  
-    .skills-container li {
-      flex: 1 1 100%; /* Full width on smaller screens */
-    }
+  .skills-container ul {
+    flex-direction: row; /* Stacks items horizontally on smaller screens */
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
   }
 
+  .skills-container li {
+    flex: 1 1 100%; /* Full width on smaller screens */
+  }
+}
 
 .connect-container {
   display: flex; /* Enables Flexbox on the container */
@@ -343,12 +325,67 @@ a:hover {
   background-color: #e0e0e0; /* Background color on hover */
 }
 
+
+
+/* General form styling */
+form[name="leave_message"] {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Form field styling */
+form[name="leave_message"] input[type="text"],
+form[name="leave_message"] input[type="email"],
+form[name="leave_message"] textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+form[name="leave_message"] button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form[name="leave_message"] button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 600px) {
+    form[name="leave_message"] {
+        padding: 15px;
+    }
+
+    form[name="leave_message"] button {
+        font-size: 18px;
+    }
+}
+
+
+
 .my-footer {
   background-color: #333;
   color: #fff;
   padding: 2px;
   text-align: center;
-  position:relative;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
