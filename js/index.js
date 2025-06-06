@@ -72,3 +72,36 @@ messageForm.addEventListener("submit", function (event) {
 
   messageForm.reset();
 });
+
+const githubUsername = "rosangely-dls";
+
+fetch(`https://api.github.com/users/${githubUsername}/repos`)
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error("Network response was not ok " + response.statusText);
+    }
+    return response.json();
+  })
+  .then((data) => {
+    const repositories = data;
+    if (repositories.length === 0) {
+      console.log("No projects found for this user.");
+    } else {
+      console.log(repositories);
+
+      const projectSection = document.getElementById("Projects");
+      const projectList = projectSection.querySelector("ul");
+
+      for (let i = 0; i < repositories.length; i++) {
+        const project = document.createElement("li");
+        project.innerText = repositories[i].name;
+        projectList.appendChild(project);
+      }
+    }
+  })
+  .catch((error) => {
+    console.error("There was a problem with the fetch operation:", error);
+    console.log(
+      "Unable to fetch projects at this time. Please try again later."
+    );
+  });
