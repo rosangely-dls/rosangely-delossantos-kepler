@@ -290,6 +290,46 @@ a:hover {
   }
 }
 
+
+
+#Projects ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#Projects li {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#Projects li:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+#Projects li::before {
+    content: '📁';
+    margin-right: 8px;
+}
+
+
+
+
+
+
+
+
+
+
 .connect-container {
   display: flex; /* Enables Flexbox on the container */
   flex-wrap: wrap; /* Allows items to wrap onto the next line */
